@@ -1,4 +1,5 @@
-var len = document.getElementById("len")
+function password(){
+var len =parseInt(document.getElementById("len").value)
 var rd1 = document.getElementById("rd1")
 var rd2 = document.getElementById("rd2")
 var rd3 = document.getElementById("rd3")
@@ -23,10 +24,9 @@ if (rd5.checked==true){
 if (rd7.checked==true){
     var sym = ['@','!','#','$','%','&','*']
 }
-function password(){
-var whole = uc+lc+sym+num
+var whole = uc.concat(lc,num,sym)
 var psw = ""
-for(var i=0; i<=len; i++){
+for(var i=0; i<=(len-1); i++){
    var char = Math.floor(Math.random()*(whole.length)) 
    psw=psw+whole[char]
    console.log(psw);
