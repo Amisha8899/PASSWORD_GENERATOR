@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+body{
+        background-color: #F675A8;
+        align-content: center ;
+        color: #293462;
+    }
+h2 , h1{
+    color: #293462;
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+    #rb{
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    align-content: center;
+    align-self: center;
+    height: 600px;
+    width: 600px;
+    margin: 0px auto 0px auto;
+    box-shadow: #293462;
+    font-size: large;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color:#7892c2;
+	border-radius:25px;
+	border:5px solid #4e6096;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:25px;
+	font-weight:bold;
+	padding:15px 15px;
+    margin: 0 auto 0 auto;
+}
+button:hover {background-color:#476e9e;}
+button:active {
+	position:relative;
+	top:1px;
+}
+</style>
+</head>
+<body>
+    <div id="rb">
+    <h1>Password Generator</h1><br><br><br>
+    <label for="len">Tell what length you want?</label>
+    <input type="text" id="len" required><br><br><br>
+    <label for="rd1">Want Uppercases?</label>
+    <input type="radio" value="1" id="rd1" name="grp1">YES</input>
+    <input type="radio" value="1" id="rd2" name="grp1">NO</input><br><br><br>
+    <label for="rd1">Want Lowercases?</label>
+    <input type="radio" value="1" id="rd3" name="grp2">YES</input>
+    <input type="radio" value="1" id="rd4" name="grp2">NO</input><br><br><br>
+    <label for="rd1">Want NUMBERS?</label>
+    <input type="radio" value="1" id="rd5" name="grp3">YES</input>
+    <input type="radio" value="1" id="rd6" name="grp3">NO</input><br><br><br>
+    <label for="rd1">Want SYMBOLS?</label>
+    <input type="radio" value="1" id="rd7" name="grp4">YES</input>
+    <input type="radio" value="1" id="rd8" name="grp4">NO</input><br><br><br><br>
+    <button onclick="password()">CONFIRM</button>
+</div>
+    <h2 id="pswd">Your password will display here... </h2>
+    <script type="text\javascript" src="C:\Users\DELL\Desktop\PASS_GEN\pswd_gn.js"></script>
+</body>
+</html>
